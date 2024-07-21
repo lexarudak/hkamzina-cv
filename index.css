@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "TT Marxiana Trial Elzevir";
+    src: url("./fonts/TT Marxiana Trial Elzevir.ttf");
+}
+
+@font-face {
+    font-family: "Evolventa-Regular";
+    src: url("./fonts/Evolventa-Regular.ttf");
+}
+
+html {
+  background: #e9edef;
+  font-family: "Evolventa-Regular";
+}
+
+h1 {
+  font-family: "TT Marxiana Trial Elzevir", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 31px;
+  text-align: center;
+  color: #27302B;
+}
+
+.body {
+  max-width: 670px;
+  margin: 0 auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: #D3D6D8;
+  padding: 20px;
+}
+
+.header {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  grid-template-areas: 
+    "banner img tel"
+    "banner img slogan"
+}
+
+.banner { 
+  grid-area: banner;
+
+  font-family: "TT Marxiana Trial Elzevir", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 12px;
+  color: #3F7698;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .tel {
+  font-size: 11px;
+  text-align: center;
+ }
+
+ .slogan {
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3F7698;
+ }
+
+.img { grid-area: img; }
+.tel { grid-area: tel; }
+.slogan { grid-area: slogan; }
