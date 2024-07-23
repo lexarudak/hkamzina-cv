@@ -8,18 +8,52 @@
     src: url("./fonts/Evolventa-Regular.ttf");
 }
 
+@font-face {
+    font-family: "TTSmalls-Regular";
+    src: url("./fonts/TTSmalls-Regular.ttf");
+}
+
+@font-face {
+    font-family: "TTSmalls-Bold";
+    src: url("./fonts/TTSmalls-Bold.ttf");
+}
+
 html {
   background: #e9edef;
   font-family: "Evolventa-Regular";
+  color: #444343;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  text-align: center;
+  color: #27302B;
 }
 
 h1 {
   font-family: "TT Marxiana Trial Elzevir", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 7px;
   font-size: 31px;
-  text-align: center;
-  color: #27302B;
+}
+
+h3 {
+   font-family: "TTSmalls-Bold";
+   font-size: 14px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "TTSmalls-Bold";
+
+  &::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: rgb(93, 142, 174);
+    margin: 5px auto;
+  }
 }
 
 .body {
@@ -55,6 +89,12 @@ h1 {
   justify-content: center;
  }
 
+ .img {
+  width: 216px;
+  height: 224px;
+  border-radius: 0 0 100% 100%;
+ }
+
  .tel {
   font-size: 11px;
   text-align: center;
@@ -72,3 +112,17 @@ h1 {
 .img { grid-area: img; }
 .tel { grid-area: tel; }
 .slogan { grid-area: slogan; }
+
+main {
+  padding: 20px;
+}
+
+.center-text {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+.list-container {
+  display: flex;
+}
